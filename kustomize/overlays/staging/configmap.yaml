@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: podinfo-config
 data:
-- APP_ENV="staging"
+  APP_ENV: staging

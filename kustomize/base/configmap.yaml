@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: podinfo-config
 data:
-- APP_ENV="none"
+  APP_ENV: none
 
 ---
 
@@ -12,4 +12,4 @@ kind: ConfigMap
 metadata:
   name: podinfo-base
 data:
-- APP_NAME="podinfo"
+  APP_NAME: podinfo
