@@ -47,6 +47,12 @@ spec:
         env:
         - name: PODINFO_UI_COLOR
           value: "#34577c"
+        envFrom:
+        - configMapRef:
+            name: podinfo-config
+        - configMapRef:
+            name: podinfo-base
+
         livenessProbe:
           exec:
             command:
