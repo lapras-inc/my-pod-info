@@ -1,4 +1,15 @@
 apiVersion: v1
 kind: ConfigMap
+metadata:
+  name: podinfo-config
 data:
 - APP_ENV="none"
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: podinfo-base
+data:
+- APP_NAME="podinfo"
